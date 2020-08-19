@@ -26,6 +26,28 @@ Example ``~/.m2/settings.xml`` file:
 
 Replace USERNAME with your Github user name. Replace TOKEN with the personal access token you set up for Github Packages.
 
+## Publishing a package to Github Packages
+
+In the package project's ``pom.xml`` file, add a distribution management section:
+
+```xml
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>test-package on Github Packages</name>
+            <url>https://maven.pkg.github.com/pcheah/test-package</url>
+        </repository>
+    </distributionManagement>
+```
+
+There is a default publishing location if you do not have a distribution management section but if we plan to publish multiple packages to the same repository, we do need this section.
+
+Then publish the package to Github Packages using Maven:
+
+```sh
+$ mvn deploy
+```
+
 ## Using this package in a Maven project
 
 Add this repository to the repositories section in pom.xml:
