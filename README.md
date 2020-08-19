@@ -74,3 +74,8 @@ Then add this dependency to the dependencies section in pom.xml:
     </dependencies>
 ```
 
+## References
+
+* [GitHub Packages](https://docs.github.com/en/packages)
+* [About GitHub Packages](https://docs.github.com/en/packages/publishing-and-managing-packages/about-github-packages)
+* [Configuring Apache Maven for use with GitHub Packages](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages)
